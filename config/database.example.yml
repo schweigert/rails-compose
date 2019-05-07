@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_compose_development
+  pool: 5
+  username: postgres
+  password: postgres
+  url: <%= ENV['DATABASE_URL'] %>
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_compose_test
+  pool: 5
+  username: postgres
+  password: postgres
+  url: <%= ENV['DATABASE_URL'] %>
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_compose_production
+  pool: 5
+  username: postgres
+  password: postgres
+  url: <%= ENV['DATABASE_URL'] %>
+  host: localhost
